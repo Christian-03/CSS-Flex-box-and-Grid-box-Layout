@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    place-items: center;
+    height: 100vh;
+}
+main{
+    display: grid;
+    grid-template-areas:
+    'a a b'
+    'c d d'
+    'c e e';
+    gap: 15px;
+    font-family: url(https://fonts.google.com/specimen/Poppins);
+    width: 50%;
+    margin:auto;
+}
+main div{
+    text-align: center;
+}
+.first{
+    background-color:orangered;
+    grid-area: a;
+    padding: 7em 2em;
+}
+.second{
+    background-color:orange;
+    grid-area: b;
+    padding: 4em 5em;
+}
+.third{
+    background-color:forestgreen;
+    grid-area: c;
+    padding: 8em;
+}
+.fourth{
+    background-color:dodgerblue;
+    grid-area: d;
+    padding: 2em;
+}
+.fifth{
+    background-color:dodgerblue;
+    grid-area: e;
+    padding: 3em;
+}
+a{
+    margin: 80px;
+    border: 2em;
+    width: 120px;
+    border-radius:25px;
+    padding:15px;
+    text-align:center;
+    color:white;
+    background-color:darkslategrey;
+    cursor: pointer;
+    position: absolute;
+}
